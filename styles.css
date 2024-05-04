@@ -1,0 +1,147 @@
+/* Custom Variables */
+:root{
+    --primary-green: #70c1b3;
+    --primary-blue: #237ba1;
+    --primary-yellow: #ffe065;
+    --primary-red: #f25f5c;
+    --primary-black: #50514f;
+    --primary-white: white;
+    --primary-gray: lightgray;
+    --text-white: white;
+    --text-black: black;
+
+}
+
+html{
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body{
+    font-family: consolas, sans-serif;
+    font-size: 1.8rem; 
+    background-color: var(--primary-gray);
+    color: var(--text-black);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-color: blue;
+
+    
+}
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* nav */
+.nav{
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  flex-direction: row;
+  font-size: 2.5rem;
+
+  z-index: 100;
+  background: var(--primary-blue);
+
+}
+
+.nav .header{
+  color: var(--text-white);
+  margin: auto 0 auto 1.5rem;
+  font-weight: bold;
+
+}
+
+.title{
+  text-align: justify;
+  margin: 1rem;
+  margin-bottom: 1rem;
+
+}
+.description{
+  margin: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.survey-form{
+  background-color: var(--primary-white);
+  width: 75%;
+  padding: auto;
+  margin: 10rem auto;
+  border-radius: 2%;
+}
+
+
+fieldset{
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+}
+
+label{
+  color: black;
+  font-size: 1.25rem;
+  bottom: 0;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+input, select{
+  height: 2rem;
+  font-size: 1rem;
+  accent-color: var(--primary-green);
+  border: 0.5px solid var(--primary-gray);
+  margin-top: .5rem;
+
+}
+
+input:focus{
+  border: 1px solid var(--primary-blue);
+  shadow-box: none;
+  background: var(--primary-green);
+}
+
+
+
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+span{
+  font-size: 1.25rem;
+}
+
+textarea{
+  width: 100%;
+  height: 100px;
+  border: 0.5px solid var(--primary-gray);
+}
+
+button{
+  background-color: var(--primary-green);
+  margin: auto;
+  height: 50px;
+  width: 50%;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+
+

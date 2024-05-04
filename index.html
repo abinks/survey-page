@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+    <title>Logo Company Survey</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<html lang="en" >
+    <body>
+        <div>
+            <nav id="navbar">
+                <div class="nav">
+                    <div class="header">allie binkley </div>
+                </div>
+            </nav>
+            <div class="survey-form">
+                <form id="survey-form">
+                    <h1 id="title" class="title">
+                        Survey Form
+                    </h1>
+                    <p id="description" class="description">Thank you for participating in this survey.  Your feedback is invaluable to me.  Please take a few minutes to complete the following questions.</p>
+                    <fieldset class="Name">
+                        <label id="name-label" for="name">
+                            Name: 
+                        </label>
+                        <br/>
+                        <input 
+                            id="name" 
+                            type="text" 
+                            required
+                            placeholder="Enter name"
+                            />
+
+                    </fieldset>
+                    <fieldset class="email">
+                        <label id="email-label" for="email">
+                            Email:
+                        </label>
+                        <br/>
+                        <input 
+                            id="email" 
+                            type="email" 
+                            placeholder="Enter email"
+                            required
+                            />
+
+                    </fieldset>
+                    <fieldset class="number">
+                        <label id="number-label" for="number">
+                            Age:
+                        </label>
+                        <br/>
+                        <input 
+                            id="number" 
+                            type="number" 
+                            min=0 
+                            max=10 
+                            required
+                            placeholder="Age"
+                            />
+                    </fieldset>
+                    <fieldset>
+                        <label id="dropdown" for="dropdown">
+                            How did you hear about me?
+                        </label>
+                        <br/>
+                        <select id="dropdown">
+                            <option>freeCodeCamp</option>
+                            <option>LinkedIn</option>
+                            <option>Facebook</option>
+                            <option>Google</option>
+                            <option>Other</option>
+                        </select>       
+
+                    </fieldset>
+                    <fieldset class="radio">
+                        <label id="radio-label" for="radio">
+                            Do you like the site?
+                        </label>
+                        <br/>
+                        <input 
+                            id="radio"
+                            type="radio" 
+                            name="radio" 
+                            value="yes"
+                            checked
+                            required
+                            />
+                            <span>
+                                Yes
+                            </span>
+                        <input 
+                            id="radio"
+                            type="radio" 
+                            name="radio" 
+                            value="no"
+                            required
+                            />
+                            <span>
+                                No
+                            </span>
+                    </fieldset>
+                    <fieldset>
+                        <label id="checkbox-label" for="checkbox">
+                            How can we improve?
+                        </label>
+                        <br/>
+                        <input 
+                            id="checkbox"
+                            type="checkbox" 
+                            value=1
+                            checked
+                        />
+                        <span>
+                            Layout
+                        </span>
+                    
+                        <input 
+                            id="checkbox"
+                            type="checkbox" 
+                            value=2
+                        />
+                        <span>
+                            Design Elements
+                        </span>
+                        <input 
+                            id="checkbox"
+                            type="checkbox" 
+                            value=3
+                        />
+                        <span>
+                            Functionality
+                        </span>
+                </fieldset>
+                <fieldset>
+                    <label id="textarea-label" for="textarea">
+                        Comments:
+                    </label>
+                    <textarea 
+                        id="textarea"
+                        placeholder="Enter any additonal comments here"
+                        >
+                    </textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <submit>
+                        <button id="submit" type="submit">
+                        Submit
+                        </button>
+                    </submit>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
